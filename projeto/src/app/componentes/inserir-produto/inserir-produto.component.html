@@ -1,0 +1,11 @@
+<p>Insira o nome</p>
+<input type="text" pInputText [(ngModel)]="produto.nome" />
+
+<p>Insira o preço</p>
+<input type="text" pInputText [(ngModel)]="produto.preco" />
+
+<p>Disponível:</p>
+<input type="checkbox" [(ngModel)]="produto.disponivel" />
+
+<button pButton label="Adicionar Produto" (click)="adicionarProduto()"></button>
+

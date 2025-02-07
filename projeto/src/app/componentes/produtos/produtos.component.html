@@ -1,2 +1,26 @@
-<h1>Inserir produto</h1>
-<input type="text" pInputText />
+<h1>Gerenciamento de Produtos</h1>
+<p-tabs value="0">
+    <p-tablist>
+        <p-tab value="0">Inserir</p-tab>
+        <p-tab value="1">Listar</p-tab>
+        <p-tab value="2">Detalhar</p-tab>
+    </p-tablist>
+    <p-tabpanels>
+        <p-tabpanel value="0">
+            <app-inserir-produto [produto]="produto" (produtoAdicionado)="adicionar_produto()></app-inserir-produto>
+        </p-tabpanel>
+        <p-tabpanel value="1">
+            <app-listar-produtos></app-listar-produtos>
+        </p-tabpanel>
+        <p-tabpanel value="2">
+            <p class="m-0">
+                <app-detalhes-produto></app-detalhes-produto>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                dolores eos qui ratione voluptatem sequi nesciunt. Consectetur, adipisci velit, sed quia non numquam eius
+                modi.
+            </p>
+        </p-tabpanel>
+    </p-tabpanels>
+</p-tabs>
