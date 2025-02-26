@@ -1,1 +1,8 @@
-<p>listar-produtos works!</p>
+<h2>Produtos Cadastrados</h2>
+<ul>
+  <li *ngFor="let produto of produtos">
+    {{ produto.nome }} - R$ {{ produto.preco }} - 
+    <span *ngIf="produto.disponivel">Disponível</span>  
+    <span *ngIf="!produto.disponivel">Indisponível</span>
+  </li>
+</ul>
